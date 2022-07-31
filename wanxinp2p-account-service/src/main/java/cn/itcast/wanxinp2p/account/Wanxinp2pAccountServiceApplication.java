@@ -1,19 +1,13 @@
-package cn.itcast.wanxinp2p.gateway;
+package cn.itcast.wanxinp2p.account;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
-@EnableZuulProxy
 @EnableDiscoveryClient
-public class GatewayServer {
-
+public class Wanxinp2pAccountServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GatewayServer.class, args);
-
+        SpringApplication.run(Wanxinp2pAccountServiceApplication.class,args);
     }
-
-
 }
